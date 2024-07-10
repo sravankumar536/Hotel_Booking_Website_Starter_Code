@@ -3,20 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking Website</title>
+    <title>Hotel List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main-wrapper">
         <div class="header">
-            <img src="assests/images/logo.png" alt="Logo" class="logo">
-            <div>Header Div</div>
+            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <a href="login.html">Login</a>
         </div>
+        
         <div class="content">
-            Content Div
+            <div class="hotel">
+                <a href="detail.html?hotel=radisson-blu">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                </a>
+                <div class="hotel-info">
+                    <h3>Radisson Blu Hotel</h3>
+                    <p>5 star</p>
+                    <p>List view</p>
+                </div>
+            </div>
+            <div class="hotel">
+                <a href="detail.html?hotel=the-lalit-new-delhi">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
+                </a>
+                <div class="hotel-info">
+                    <h3>The Lalit New Delhi</h3>
+                    <p>5 star</p>
+                    <p>List view</p>
+                </div>
+            </div>
+            <div class="hotel">
+                <a href="detail.html?hotel=taj-palace">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+                </a>
+                <div class="hotel-info">
+                    <h3>Taj Palace</h3>
+                    <p>5 star</p>
+                    <p>List view</p>
+                </div>
+            </div>
+            <div class="map">
+                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image">
+            </div>
         </div>
         <div class="footer">
-            Footer Div
+            <div>
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/images/facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/images/instagram.png" alt="Instagram" class="social-icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="assets/images/twitter.png" alt="Twitter" class="social-icon"></a>
+            </div>
+            <div>&copy; 2020 ROOM SEARCH PVT. LTD.</div>
         </div>
     </div>
 </body>
