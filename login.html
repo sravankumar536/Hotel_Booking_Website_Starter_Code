@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking Website</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var error = document.getElementById("error-message");
+            if (username === "") {
+                error.style.display = "block";
+                return false;
+            } else {
+                error.style.display = "none";
+                return true;
+            }
+        }
+    </script>
 </head>
 <body>
-    <div class="main-wrapper">
-    
-        <div class="Login">
-            Login
+    <div class="login-wrapper">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="index.html" onsubmit="return validateForm()">
+                <div>
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <div id="error-message" style="display: none; color: yellow;">Please fill the username field</div>
+            </form>
         </div>
     </div>
 </body>
